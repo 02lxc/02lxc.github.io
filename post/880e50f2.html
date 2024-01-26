@@ -1,0 +1,223 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>浅析社会工程手段与防范措施 | Enboy_Yu's blog</title><meta name="keywords" content="社会工程学"><meta name="author" content="Enboy_Yu"><meta name="copyright" content="Enboy_Yu"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="written by Enboy_Yu  摘要：随着信息时代的发展，社会工程攻击手段之势有如雨后春笋。而传统式网络安全无论在技术维度，还是在相关管理的维度，大抵是集中在不断更迭换代的硬件物质因素和外在行为因素，忽略了本应处于网络安全核心地位的人为心理因素，致使社会工程学攻击已经成为了未来十年内信息安全中的最大隐患。把握社会工程">
+<meta property="og:type" content="article">
+<meta property="og:title" content="浅析社会工程手段与防范措施">
+<meta property="og:url" content="https://02lxc.github.io/post/880e50f2.html">
+<meta property="og:site_name" content="Enboy_Yu&#39;s blog">
+<meta property="og:description" content="written by Enboy_Yu  摘要：随着信息时代的发展，社会工程攻击手段之势有如雨后春笋。而传统式网络安全无论在技术维度，还是在相关管理的维度，大抵是集中在不断更迭换代的硬件物质因素和外在行为因素，忽略了本应处于网络安全核心地位的人为心理因素，致使社会工程学攻击已经成为了未来十年内信息安全中的最大隐患。把握社会工程">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://img1.baidu.com/it/u=4238327173,1562047852&fm=253&fmt=auto&app=138&f=PNG?w=889&h=500">
+<meta property="article:published_time" content="2022-07-19T08:40:35.000Z">
+<meta property="article:modified_time" content="2023-11-07T09:52:32.245Z">
+<meta property="article:author" content="Enboy_Yu">
+<meta property="article:tag" content="社会工程学">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://img1.baidu.com/it/u=4238327173,1562047852&fm=253&fmt=auto&app=138&f=PNG?w=889&h=500"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://02lxc.github.io/post/880e50f2"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin=""/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-11-07 17:52:32'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    })(window)</script><link rel="stylesheet" href="C:\blog-demo\node_modules\hexo-theme-butterfly\source\css\custom.css"><meta name="generator" content="Hexo 6.2.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src="/img/1.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">11</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">9</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://img1.baidu.com/it/u=4238327173,1562047852&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=PNG?w=889&amp;h=500')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Enboy_Yu's blog</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">浅析社会工程手段与防范措施</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-07-19T08:40:35.000Z" title="发表于 2022-07-19 16:40:35">2022-07-19</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-11-07T09:52:32.245Z" title="更新于 2023-11-07 17:52:32">2023-11-07</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%AE%BA%E6%96%87/">论文</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="浅析社会工程手段与防范措施"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><pre><code>                                    written by Enboy_Yu
+</code></pre>
+<p>摘要：随着信息时代的发展，社会工程攻击手段之势有如雨后春笋。而传统式网络安全无论在技术维度，还是在相关管理的维度，大抵是集中在不断更迭换代的硬件物质因素和外在行为因素，忽略了本应处于网络安全核心地位的人为心理因素，致使社会工程学攻击已经成为了未来十年内信息安全中的最大隐患。把握社会工程学的心理规律特点,有效地进行信息安全防御,有助于降低个人和社会损失。</p>
+<p>关键词：信息安全，社会工程学，模型，信息搜集</p>
+<h1 id="1工程手段"><a href="#1工程手段" class="headerlink" title="1工程手段"></a>1工程手段</h1><h2 id="1-1-基本概念"><a href="#1-1-基本概念" class="headerlink" title="1.1 基本概念"></a>1.1 基本概念</h2><p>所谓社会工程学，其概念是最早在2002年由凯文·米特尼克在《欺骗的艺术》中提出的。但目前学界对社会工程学并没有一个规范的成文化定义，而根据相关社会工程学案例，可将其总结为：社会工程学是将自然行为、社会制度等作为入口，利用人的心理弱点以及规章制度上的漏洞，布下全套，意图获得其目标信息，最终通过未经授权的路径访问某些重要数据。</p>
+<pre><code>[凯文·米特尼克]：美国著名黑客。在他的《欺骗的艺术》中的描述，可以将社会工程学黑客技术总结为：社会工程学就是通过自然的、社会的和制度上的途径，利用人的心理弱点(如人的本能反应、好奇心、信任、贪婪)以及规则制度上的漏洞，在攻击者和被攻击者之间建立起信任关系，获得有价值的信息，最终可以通过未经授权的路径访问某些重要数据。社会工程学攻击与其他类型攻击的最大区别是：会与受害者进行交互式行为，建立一个陷阱让对方掉入或是伪造身份来建立信任关系都属于典型的社会工程学的手段。
+</code></pre>
+<p>事实上，随着信息安全技术的发展，人为因素才是信息安全的真正软肋。攻击者利用技术弱点进行信息安全攻击已经渐趋黔驴技穷，是故越来越多的黑客开始转向利用人性弱点，运用社会工程手段渗透。这使他们无需耗费较大代价，便可达其目的。</p>
+<p>当前的大环境也正是社会工程手段的温床：许多信息科技企业在安全技术上投入不菲的资金，可最终导致机密泄露的原因，却往往是人为因素。对于黑客们而言，通过几个用户名、几串数字、几组英文代码，借用社会学攻击手段，加以筛选、整理，就能把你的所有个人情况的基本信息、你在网上留下的一切痕迹等掌握得一清二楚。虽然这些可能是最不起眼，听起来不像“黑客”那么高级的方法。但事实如此，这种无需依托任何黑客软件，更注重研究人性弱点的黑客手法正风兴云蒸。</p>
+<h2 id="1-2攻击特点"><a href="#1-2攻击特点" class="headerlink" title="1.2攻击特点"></a>1.2攻击特点</h2><p>概括性地讲，社会工程学是利用人的心理弱点与制度的漏洞来攻击。基本的意思就是借助一切可能的途径、手段，搜集攻击目标对象的信息，然后利用已知资料攻陷对方。与传统的网络攻击相比，社会工程学攻击具有以下一些特点：</p>
+<p>(1)两面性。在某种程度上，社会工程学主导着新式的信息安全。它是一把双刃剑，既可以帮助安全机关完成预防及侦察工作，也可能被不法分子利用来进行破坏行为。所以其性质取决于我们的重视与使用。</p>
+<p>(2)针对性。社会工程学攻击的核心是利用人为因素的手段来进行攻击。其观点认为，人的行为才是整个信息安全体系中最脆弱的部分。攻击者会针对其目标对象性格中的信任、恐惧、威胁、懒惰、健忘等特点，通过伪造身份、设置陷阱等手段，最终获取自己想要的信息。</p>
+<p>(3)有效性。首先，攻击者不必再把时间和精力浪费在寻找漏洞、破解口令等环节上，而是直接瞄准信息的拥有者，减少了中间环节的同时，还更容易隐藏真实身份。另外，许多信息公司盲目地追求利益的最大化，罔视在雇员信息安全培训上的投资，使得在更多情况下，人比系统更加脆弱。</p>
+<p>我们举一个简明的案例来说明社会工程的手段：假设黑客Adam想要渗透一个网站，但在千辛万苦的检索后并没有发现该网站的漏洞。因此黑客Adam伪造了一封带有特洛伊木马式的陷阱附件的电子邮件，并通过该网站的通讯地址发送该电子邮件欺骗网站管理员Bob，称其已成功入侵该网站，电子邮件附件就是入侵后的图像。如果管理员Bob相信Adam的话或出于谨慎考虑打开附件，Adam将潜入网站的后门，并为后续的入侵工作找到突破。由此观之，我们可以将社会工程攻击提炼为四个步骤：巧妙收集信息、伪装身份获取信息、组织信息设置陷阱和获取攻击权限。<br>社会工程似乎是一个简单的骗局，但却包含着纷繁的心理因素。我们可以防止技术入侵，但谁能时刻警惕心理漏洞呢？毫无疑问，社会工程将是未来对抗安全渗透的一个重要领域。</p>
+<h2 id="1-3攻击类型"><a href="#1-3攻击类型" class="headerlink" title="1.3攻击类型"></a>1.3攻击类型</h2><h3 id="1-3-1基于人类（Human-Based）"><a href="#1-3-1基于人类（Human-Based）" class="headerlink" title="1.3.1基于人类（Human Based）"></a>1.3.1基于人类（Human Based）</h3><p>这是一种围绕人的行为的社会工程学手段。在此类中，我们需要人与人的互动来接触到目标信息。这里列举几种常见的方法：</p>
+<p>(1)伪装<br>这是社工攻击中最为广泛的手段之一。黑客首先通过各种手段成为你经常接触到的熟人，然后逐渐被你企业的其他同事认可，他们时常造访你的企业，并最终赢得信赖，可以在企业中获得许多权限来实施计划，比如访问那些本不应允许的区域或者下班后还能进入办公室等。</p>
+<p>(2)投桃报李<br>通过利益交换的方式达成双方各自利益的行为，成为投桃报李。这类攻击需要长期业务合作达成的非正式关系。利用公司之间的信任关系，可以轻松的获取特定信息的目标人员。</p>
+<p>(3)冒充<br>重要人物冒充 — 假装是部门的高级主管，要求工作人员提供所需信息。<br>求助职员冒充 — 假装是需要帮助的职员，请求工作人员帮助解决问题，借以获得信息。<br>技术支持冒充 — 假装是正在处理网络问题的技术支持人员，要求获得所需信息以解决问题。</p>
+<p>(4)寻求帮助<br>这是经典的社工方法之一。向帮助台和服务人员提出问题、寻求帮助，并最终套取想要的信息，这让他们成为了社会工程学攻击热门目标。</p>
+<h3 id="1-3-2基于网络（Internet-Based）"><a href="#1-3-2基于网络（Internet-Based）" class="headerlink" title="1.3.2基于网络（Internet Based）"></a>1.3.2基于网络（Internet Based）</h3><p>与基于人类线下交往的社工手段相反，这是一种依附于网络空间的社会工程学手段。在此类中，我们只需在虚拟空间布好陷阱来接触到目标信息。这里同样列举几种常见的方法：</p>
+<p>(1)网络钓鱼<br>可以采取多种形式轻易地获取个人信息或凭证。可能是在诱使用户在看起来合法的网站上输入个人凭证，用户名密码等等，该网站会将信息反馈给攻击者。</p>
+<p>(2).水坑攻击<br>一旦攻击者确定了受害者的个人资料，水坑攻击便试图在该人或组织经常访问的网站上进行攻击。这种利用访问会将恶意软件植入到他们的计算机中，例如远程访问木马，从而使攻击者可以开始窃取数据的工作。</p>
+<p>(3)信任攻击<br>攻击者将向受害者提供真正有价值的东西，并以蠕虫的方式侵入目标网络。举个例子，攻击者冒充技术支持人员，帮助你解决了遇到的问题，但同时也说服你输入一行代码（后门）。简而言之，这种攻击很简单，就像提供一块巧克力来换取你的密码。</p>
+<p>(4)诱饵攻击<br>在这里，攻击者通常是通过激发好奇心或说服你运行带有隐藏恶意软件的硬件或软件来诱使受害者执行代码。例如，在办公楼下分发的看上去无辜的U盘，实际上可能包含恶意木马；或者是在人多的地方，故意掉落一些USB接口的硬件等等。</p>
+<p>(5)好感攻击<br>就是指攻击者创造了一个合理的场景，他们诱骗受害者一起玩耍以窃取其信息。比如，攻击者先和你成为朋友，获取你的一些基本信息，然后伪装成你办理业务的银行，骗取受害者钱财。它依赖于与受害者建立虚假的友谊，而受害者无论出于何种原因都会给攻击者带来更多的信息，攻击者再基于信息进行攻击。</p>
+<p>(6)伪身份攻击<br>本质上是将经过高级身份验证的人员跟踪到限制区域内，使用伪装之类的欺骗手段使受害者获得虚假的安全感。举个例子，在现实生活中，你穿着一身电信的工作人员的衣服，提个工具包，可以借此进出保安系统相当完备的企业大楼，如果要求出示证件，伪造一张类似的，并在进出表上填写虚假个人信息。</p>
+<h1 id="2社会工程防范措施"><a href="#2社会工程防范措施" class="headerlink" title="2社会工程防范措施"></a>2社会工程防范措施</h1><p>人性千变万化，而与之相对应的社会工程手段也自是纷繁复杂。尤其随着信息安全技术的不断发展，攻击手段也将也来越多样化，防御手段不可能只是墨守成规，固步自封。</p>
+<p>经由对社会工程学攻击展开对比分析，我们知道社会工程学手段大体包含两个不同的方面：一个是科学技术维度，另一个是人为心理维度。而预防与检测社会工程学攻击，其效果同样和维护操作系统安全的效果同样明显，所以防范策略需要在物理和心理两个层面上都有所动作。我们为维护操作系统安全则需要做到两方面同时部署，一个是从安全技术策略角度，一个是从系统相关管理人员角度。</p>
+<p>安全技术策略需要在物理、网络、操作系统、数据库、中间件等多方面进行设置。但同时也要通过系统管理制度等方面对管理系统的相关人员进行培训，提高信息安全意识，站在网络系统管理员的立场上，尽量不要让“人之间的关系”因素问题介入你的信息安全链路之中。培训用户学习安全策略规定并确保他们遵守，是防范社会工程学攻击的主要办法。为了对付社会工程攻击，要抛弃网络架构刀枪不入之类的幻想，是防范社会工程学攻击的必要保证。</p>
+<p>下面是对防御社会工程学制定的两类策略：</p>
+<p>第一类，对企业而言：</p>
+<p>（1）我们首先应建立事故响应小组。而这应当由来自公司不同关键部门的知识渊博的员工组成，他们要经过良好培训并随时准备对社会工程攻击做出反应，有效地分析出入侵的目的与方式。</p>
+<p>（2）其次，要将规章制度的设立与教育培训相结合。对企业内部进行培训，建立雇员参与机制，制定简单的规则，确定什么是关键信息，提高员工的安全意识。</p>
+<p>（3）再次，要筹备尽可能完善的网络安全管理策略。策略中确定对每个资源管理授权者的同时，还要确定他们可以对用户授予哪些级别的权限。倘若缺少资源管理授权者的信息，就无法掌握究竟哪些人在使用网络。对于主干网络中的关键通信资源，对其可授权范围应尽可能小，范围越小就越容易管理，相对也就越安全，以防止对授权职责的滥用。</p>
+<p>（4）最后，则建立相应预警演练机制。模拟入侵程序，利用模拟环境和测试，来制定相应的对策和解决方法。同时全面应用其他安全技术措施，譬如设立电话录音、客户访问记录、文档等敏感信息的访问等级制度。</p>
+<p>第二类，对个人用户而言：</p>
+<p>（1）当心来路不明的服务提供商发来的电子邮件、即时消息以及电话。在提供任何个人信息前验证其身份的真实性和请求的合法性；</p>
+<p>（2）缓慢并认真地浏览电子邮件、即时消息或短信中的细节。不要让攻击者消息中的急迫性响了判断力；</p>
+<p>（3）信息是预防社会工程攻击的最有力的工具，积极了解如何鉴别和防御网络攻击者；永远要点击来自陌生发送者的电子邮件中的嵌入链接。如果有必要就使用搜索引擎寻找网站或工输入网址；</p>
+<p>（4）永远不要在未知发送者的电子邮件中下载附件，如果有必要，可以在保护视图中打开附拒绝来自陌生人的在线电脑技术帮忙，无论他们声称自己是多么正当；</p>
+<p>（5）使用防火墙来保护计算机设备，及时更新杀毒软件同时启用和设置垃圾邮件过滤；</p>
+<p>（6）保持操作系统和应用软件的更新，及时安装软件供应商发布的安全补丁程序；</p>
+<p>（7）关注网站的链接，有的不法分子对网络链接做了细微的改动，将流量诱导到诈骗等不良网站。<br>。</p>
+<h1 id="3-总结"><a href="#3-总结" class="headerlink" title="3 总结"></a>3 总结</h1><p>网络安全涉及问题极其广泛，入侵攻击手段纷繁复杂，它不仅只是技术问题，而是与社会心理学息息相关。因为并不是所有的服务都是可以凭借单纯的技术手段去入侵的。社会工程学攻击已将黑客技术从大众所认为的单纯的技术问题发展成为了防不胜防的社会学问题，而这社会因素甚至更为重要。</p>
+<p>“习惯”是非常可怕的。一些“后门”常常是出于人的惯性行为，疏忽，制度的不规范、不严密，导致其成为了黑客突破的对象。仔细分析，我们会发现，从社会工程学延伸出以其为首要经典攻击手法，如网络钓鱼、密码心理学以及一些利用社会工程学渗入目标企业或者内部得到所需要信息的大胆手法，皆是利用人性弱点进行攻击的方法。综上所述，重视对安全意识的培养，强化对安全技术的管理，加强对安全审核的策略，建立及时而完备的响应机制，同时注重对个人隐私的保护，才是保障网络信息安全，防范社会工程学攻击的不二法门。</p>
+<p>教育与培训应该成为社会、企业的一个常态化工作。对网络信息安全的培训，同样要加入对社会工程学的课程，借助社会各个资源进行宣传和引导，它不应该成为政法部门专属的宣传工作一一借助媒体、学校、社区工作者都可以成为教育与培训的辅助力量。从而减少个体用户被施以社工渗透的机会，也有助于其他相关方面工作的开展。虽然近些年来，随着信息科技的发展和人们防范意识的增强，对社工渗透有了一定的抵御能力，然而很多人在日常生活中的安全防范意识仍是很薄弱的，只有通过培训和宣传增加对社会工程学知识的了解，强化安全防范意识，使人们培养良好的理性分析习惯，才不会成为下一个被“欺骗的艺术”愚弄的对象。</p>
+<pre><code>参考文献：
+
+[1] 肖新光.寻找APT的关键词[J].中国信息安全,2013(10):100-104
+
+[2] 张瑜,潘小明,LIU Qingzhong,曹均阔,罗自强.APT攻击与防御[J].清华大学学报：自然科学版,2017,57(11):1127-1133
+
+[3] 王治,范明钰,王光卫.信息安全领域中的社会工程学研究[J].信息安全与通信保密,2005(7):229-231 
+
+[4] 闫兵.信息安全中的社会工程学攻击研究[J].办公自动化：综合月刊,2008(10):40-4147
+
+[5] 薛晨,杨世平.基于社会工程学的入侵渗透的研究[J].贵州大学学报：自然科学版,2015,32(1):81-85
+
+[6] 任利宁.浅析社会工程学入侵网络的机制与防范措施[J].兰州工业高等专科学校学报,2009,16(2):7-9
+</code></pre>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">Enboy_Yu</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://02lxc.github.io/post/880e50f2.html">https://02lxc.github.io/post/880e50f2.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://02lxc.github.io" target="_blank">Enboy_Yu's blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E7%A4%BE%E4%BC%9A%E5%B7%A5%E7%A8%8B%E5%AD%A6/">社会工程学</a></div><div class="post_share"><div class="social-share" data-image="https://img1.baidu.com/it/u=4238327173,1562047852&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=PNG?w=889&amp;h=500" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/post/beaf4f1e.html"><img class="prev-cover" src="https://img2.baidu.com/it/u=275167411,3581484250&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=JPEG?w=870&amp;h=489" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">sqli-labs大冒险</div></div></a></div><div class="next-post pull-right"><a href="/post/730dd3ed.html"><img class="next-cover" src="https://img0.baidu.com/it/u=2695465590,3906356695&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=JPEG?w=889&amp;h=500" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">MarkDown语法(一)</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-info-avatar is-center"><img class="avatar-img" src="/img/1.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">Enboy_Yu</div><div class="author-info__description"></div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">11</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">9</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="xpand" style="height:200px;"><canvas class="illo" width="800" height="800" style="max-width: 200px; max-height: 200px; touch-action: none; width: 640px; height: 640px;"></canvas></div><script src="https://fastly.jsdelivr.net/gh/xiaopengand/blogCdn@latest/xzxr/twopeople1.js"></script><script src="https://fastly.jsdelivr.net/gh/xiaopengand/blogCdn@latest/xzxr/zdog.dist.js"></script><script id="rendered-js" src="https://fastly.jsdelivr.net/gh/xiaopengand/blogCdn@latest/xzxr/twopeople.js"></script><style>.card-widget.card-announcement {
+margin: 0;
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+canvas {
+display: block;
+margin: 0 auto;
+cursor: move;
+}</style><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1%E5%B7%A5%E7%A8%8B%E6%89%8B%E6%AE%B5"><span class="toc-number">1.</span> <span class="toc-text">1工程手段</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-1-%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="toc-number">1.1.</span> <span class="toc-text">1.1 基本概念</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-2%E6%94%BB%E5%87%BB%E7%89%B9%E7%82%B9"><span class="toc-number">1.2.</span> <span class="toc-text">1.2攻击特点</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-3%E6%94%BB%E5%87%BB%E7%B1%BB%E5%9E%8B"><span class="toc-number">1.3.</span> <span class="toc-text">1.3攻击类型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-1%E5%9F%BA%E4%BA%8E%E4%BA%BA%E7%B1%BB%EF%BC%88Human-Based%EF%BC%89"><span class="toc-number">1.3.1.</span> <span class="toc-text">1.3.1基于人类（Human Based）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-2%E5%9F%BA%E4%BA%8E%E7%BD%91%E7%BB%9C%EF%BC%88Internet-Based%EF%BC%89"><span class="toc-number">1.3.2.</span> <span class="toc-text">1.3.2基于网络（Internet Based）</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2%E7%A4%BE%E4%BC%9A%E5%B7%A5%E7%A8%8B%E9%98%B2%E8%8C%83%E6%8E%AA%E6%96%BD"><span class="toc-number">2.</span> <span class="toc-text">2社会工程防范措施</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3-%E6%80%BB%E7%BB%93"><span class="toc-number">3.</span> <span class="toc-text">3 总结</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/post/645befba.html" title="应用密码学"><img src="https://www.helloimg.com/images/2023/06/30/o4iOOQ.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="应用密码学"/></a><div class="content"><a class="title" href="/post/645befba.html" title="应用密码学">应用密码学</a><time datetime="2023-06-30T07:53:31.000Z" title="发表于 2023-06-30 15:53:31">2023-06-30</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/post/c992e850.html" title="python从入门到实践"><img src="https://www.helloimg.com/images/2023/03/27/o3Fmem.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="python从入门到实践"/></a><div class="content"><a class="title" href="/post/c992e850.html" title="python从入门到实践">python从入门到实践</a><time datetime="2023-03-27T06:38:19.000Z" title="发表于 2023-03-27 14:38:19">2023-03-27</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/post/a1b131e4.html" title="MarkDown语法(二)"><img src="https://img0.baidu.com/it/u=2695465590,3906356695&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=JPEG?w=889&amp;h=500" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="MarkDown语法(二)"/></a><div class="content"><a class="title" href="/post/a1b131e4.html" title="MarkDown语法(二)">MarkDown语法(二)</a><time datetime="2023-03-21T05:06:20.000Z" title="发表于 2023-03-21 13:06:20">2023-03-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/post/7da59eac.html" title="计算机通信与网络"><img src="https://www.helloimg.com/images/2023/03/06/oa3s4v.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="计算机通信与网络"/></a><div class="content"><a class="title" href="/post/7da59eac.html" title="计算机通信与网络">计算机通信与网络</a><time datetime="2023-03-21T02:39:37.000Z" title="发表于 2023-03-21 10:39:37">2023-03-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/post/896d251.html" title="从0到1学习数据结构与算法（更新中）"><img src="https://www.helloimg.com/images/2022/11/02/ZYtWQP.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="从0到1学习数据结构与算法（更新中）"/></a><div class="content"><a class="title" href="/post/896d251.html" title="从0到1学习数据结构与算法（更新中）">从0到1学习数据结构与算法（更新中）</a><time datetime="2022-09-08T08:33:35.000Z" title="发表于 2022-09-08 16:33:35">2022-09-08</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('https://img1.baidu.com/it/u=4238327173,1562047852&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=PNG?w=889&amp;h=500')"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024  <i id="heartbeat" class="fa fas fa-heartbeat"></i> Enboy_Yu</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div><link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/HCLonely/images@master/others/heartbeat.min.css"></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/search/local-search.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"></div><script async src="https://npm.elemecdn.com/tzy-blog/lib/js/other/sakura.js"></script><canvas class="fireworks" mobile="false"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/fireworks.min.js"></script><script defer="defer" id="fluttering_ribbon" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"right","width":150,"height":300,"hOffset":20,"vOffset":-20},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/"});</script></body></html>
