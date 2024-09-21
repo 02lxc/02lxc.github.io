@@ -36,7 +36,7 @@ npm install
 ```shell
 hexo server
 ```
-4. 打开浏览器，访问 http://localhost:4000 查看博客。
+4. 打开浏览器，访问 https://www.enboy.site/ 查看博客。
 
 ## 博客主题和插件
 我的博客使用了一个自定义的主题，并集成了一些插件以增强功能和用户体验。以下是一些值得注意的插件：
